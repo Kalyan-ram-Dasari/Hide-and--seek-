@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+    <style>
+         body{
+            background-color: bisque;
+        }
+        .game{
+            width: 400px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            gap: 5px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 0px;
+            background-color: aqua;
+        }
+        .box:hover{
+            background-color:rgb(194, 93, 177);
+        }
+        .input-box{
+            background-color: rgb(156, 156, 255);
+            padding: 20px 30px;
+            width: fit-content;
+            border-radius: 50px;
+            display: flex;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+        }
+    
+        button{
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: aquamarine;
+        }
+        input{
+            border-radius: 10px;
+        }
+        .level2-btn{
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+        .hover:hover{
+            background-color: rgb(82, 80, 92);
+        }
+        .level3-btn{
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+        }
+        .level1-btn{
+            position: absolute;
+            bottom: 30px;
+            left: 200px;
+        }
+        .title{
+            text-align: center;
+            padding: 20px;
+            background-color:rgb(156, 156, 255) ;
+            border-radius: 15px;
+        }
+        .hid-img {
+            font-size: 30px;
+        }
+        .box{
+            text-align: center; 
+        }
+        .flip{
+            transform: rotateY(180deg);
+            transition: ease 1s all;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .score-box{
+            position: absolute;
+            background-color: hotpink;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            width: 13rem;
+            padding: 1rem;
+        }
+        .name-boxes{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Hide&Seek - Game Level - 2</h1>
+    <a href="levelOne.html">
+        <button class="level3-btn">Play - Level 1</button></a>
+        <a href="levelThree.html">
+            <button class="level1-btn">Play - Level 3</button></a>
+
+            <div class="score-box">
+                <p>Gifts Remaining <span id="gifts-rem">3</span></p>
+                <p>Chances <span id="chances">0</span></p>
+            </div>
+            <div class="game">
+                <div class=""> </div>
+                <div class="name-boxes"> <b>1</b> </div>
+                <div class="name-boxes" > <b>2</b> </div>
+                <div class="name-boxes"> <b>3</b> </div>
+                <div class="name-boxes"> <b>4</b> </div>
+                
+                <div> <b>A</b> </div>
+                <div data-value="0" class="box">
+                    <p class="hid-img"></p>
+                </div>
+                <div data-value="1" class="box">
+                    <p class="hid-img"></p>
+                </div> 
+                <div data-value="2" class="box">
+                    <p class="hid-img"></p>
+                </div> 
+        
+                <div data-value="3" class="box">
+                    <p class="hid-img"></p>
+                </div>
+                <div> <b>B</b> </div>
+                <div data-value="4" class="box">
+                    <p class="hid-img"></p>
+                </div> 
+                <div data-value="5" class="box">
+                    <p class="hid-img"></p>
+                </div> 
+        
+                <div data-value="6" class="box">
+                    <p class="hid-img"></p>
+                </div>
+                <div data-value="7" class="box">
+                    <p class="hid-img"></p>
+                </div> 
+                <div> <b>C</b> </div>
+                <div data-value="8" class="box">
+                    <p class="hid-img"></p>
+                </div>
+                 
+            
+                <div data-value="9" class="box">
+                    <p class="hid-img"></p>
+                </div>
+                <div data-value="10" class="box">
+                    <p class="hid-img"></p>
+                </div> 
+                <div data-value="11" class="box">
+                    <p class="hid-img"></p>
+                </div> 
+                <div> <b>D</b> </div>
+            
+                    
+                    <div data-value="12" class="box">
+                        <p class="hid-img"></p>
+                    </div>
+                    <div data-value="13" class="box">
+                        <p class="hid-img"></p>
+                    </div> 
+                    <div data-value="14" class="box">
+                        <p class="hid-img"></p>
+                    </div> 
+            
+                    <div data-value="15" class="box">
+                        <p class="hid-img"></p>
+                    </div> 
+                </div> 
+            </div>
+    <div class="input-box">
+        <input id="input-box" type="text">
+        <button id="start-btn" class="hover">Guess</button>
+    </div>
+    <script src="scripts/l2.js"></script>
+    
+</body>
+</html>
