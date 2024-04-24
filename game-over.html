@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-.game{
-   background-color: red;
-}
-.level3-btn{
-         
-  margin: 0;
-  position: absolute;
-  margin-left: 50%;
-  
-            
-        }
-        button{
-            padding: 15px 40px;
-            font-size: 20px;
-            border-radius: 10px;
-            background-color: aquamarine;
-        }
-        .Home{
-            color: aliceblue;
-            text-align: center;
-            font-size: 100px;
-            padding-top: 150px;
-        }
-         .p1{
-            font-size: 50px;
-            margin-left: 30%;
-         }
-         .start{
-            color: aliceblue;
-            text-align: center;
-            font-size: 50px;
-            padding-top: 68px;
-        }
+      * {
+         font-family: 'Poppins', sans-serif;
+         text-align: center;
+         color: aliceblue;
+      }
+
+      .game {
+         background-color: black;
+
+      }
+
+      .level3-btn {
+
+         margin: 0;
+         position: absolute;
+         margin-left: -15%;
+
+
+      }
+
+      button {
+         padding: 15px 40px;
+         font-size: 20px;
+         border-radius: 10px;
+         background-color: aquamarine;
+         color: black;
+      }
+
+      .Home {
+
+         text-align: center;
+         font-size: 100px;
+         padding-top: 100px;
+         text-align: center;
+      }
+
+      .p1 {
+         position: relative;
+         left: -15%;
+         font-size: 40px;
+         margin-left: 30%;
+
+      }
+
+      .start {
+
+         text-align: center;
+         font-size: 50px;
+         padding-top: 68px;
+      }
    </style>
 </head>
+
 <body class="game">
-   <h1 class="Home">GAME OVER😔</h1>
-   <div class="p1"> 
-   <p> you have Selected Mine💣  and you Lost
-       </p>
+   <section class="game">
+      <h1 class="Home">GAME OVER😔</h1>
+      <div class="p1">
+         <p> you have Selected Mine💣 and you Lost</p>
+         <p>You can try again by clicking on the button below</p>
+
+         <a href="index.html">
+            <button class="level3-btn">Restart</button></a>
+          
       </div>
-   <a href="index.html">
-      <button class="level3-btn">Restart</button></a>
-      <p class="start">Click on Restart to play Again</p>
-  
+   </section>
 </body>
+
 </html>
