@@ -1,67 +1,54 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <style>
-        
-      .Home{
-            color: rgb(242, 242, 238);
-            text-align: center;
-            font-size: 90px;
-            padding-top: 60px;
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Page</title>
+    <style>
+        * {
+         font-family: 'Poppins', sans-serif;
+         text-align: center;
+         color: black;
+         font-size: 26px;
+         overflow: hidden;
+      }
+        .main{
+            background-color: whitesmoke;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 100px;
         }
-        .background{
-         background-color: rgb(50, 41, 214);
+        .btn{
+            background-color: rgb(255, 145, 0);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
         }
-           
-      
-        button{
-            padding: 20px 20px;
-            font-size: 30px;
-            border-radius: 10px;
+        .win-content{
+            position: relative;
+            top: 30%;
         }
-        .level3-btn{
-         color: aliceblue;
-         background-color: #0b120b;
-         margin: 0;
-         position: absolute;
-         margin-left: 50%;
-         padding: 15px 40px;
-         font-size: 16px; 
-         border-bottom: rgb(89, 100, 10);
-         cursor:pointer;      
-         }
-         .start{
-            color: aliceblue;
-            text-align: center;
-            font-size: 50px;
-            padding-top: 30px;
-        } 
-        .input-box{
-            background-color: rgb(156, 156, 255);
-            padding: 20px 30px;
-            width: fit-content;
-            border-radius: 50px;
-            display: flex;
-            position: absolute;
-             
-        } 
-        
-   </style>
-
+        .gift-img{
+            position: relative;
+            background: center center;
+            height: 650px;
+            width: 100%;
+            border-radius: 20%;
+            
+        }
+    </style>
 </head>
-<body class="background">
-   <h1 class="input-box">⭐congratulations!</h1>
-   <h1 class="Home">you won a Gift🎁</h1>
-   <a href="index.html">
-      <button id="restart-btn" class="level3-btn">Restart&#8635; </button></a>
-      <br>
-      <p class="start">Click on Restart to play Again</p>
-
+<body>
+    <section  class="main">
+        <div class="Win-content">
+            <p> Congratulations ⭐ You have won the game </p>
+            <p>You can try again by clicking on the button below</p>
+            <a href="index.html"> <button class="btn">Play Again</button> </a>
+        </div>
+        <div class="gift-img">
+            <img src="giftimg.jpg" alt="">
+        </div>
+    </section>
+    
 </body>
-
 </html>
